@@ -1,14 +1,19 @@
 
-public class TiradaAleatoria {
+public class ArchivoJAVA {
 
   public static void main(String[] args) {
     
+    Scanner sc = new Scanner(System.in);
     
-    int tiradaDado = (int)(Math.random()*6+1);
-    int mesAleatorio = (int)(Math.random()*12+1);
+    System.out.println("Introduzca un número entero");
+    int primerNumero = Integer.parseInt(sc.next());
+
+    System.out.println("Introduzca otro número entero");
+    int segundoNumero = Integer.parseInt(sc.next());
+
+    int suma = primerNumero + segundoNumero;
     
-    System.out.println(tiradaDado);
-    System.out.println(mesAleatorio);
+    System.out.println("La suma de ambos números es: " + suma);
 
   }
 
